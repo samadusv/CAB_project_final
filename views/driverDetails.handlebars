@@ -1,0 +1,44 @@
+<br>
+<h1 class="text-center">Drivers</h1>
+<div class="container">
+    {{!-- <a href="/create" class="btn btn-primary">+ New Movie</a> --}}
+    <table class="table table-striped mt-4">
+        
+        <a href="addNewDriver">
+            <button class="btn btn-success">Add Driver</button>
+
+        </a>
+        <br>
+        <br>
+        
+        <tr>
+            <th>id</th>
+            <th>driver name</th>
+            <th>liscense number</th>
+            <th>email</th>
+            <th>address</th>
+            <th>dob</th>
+            <th>gender</th>
+            <th>password</th>
+        </tr>
+    
+        {{#each driverDetails}}
+        <tr>
+            <td>{{this.dataValues.driver_Id}}</td>
+            <td>{{this.dataValues.driverName}}</td>
+            <td>{{this.dataValues.driverLiceneceNo}}</td>
+            <td>{{this.dataValues.driverEmail}}</td>
+            <td>{{this.dataValues.driverAddress}}</td>
+            <td>{{this.dataValues.driverDob}}</td>
+            <td>{{this.dataValues.driverGender}}</td>
+            <td>
+                <a style="color: green;" href="editdriver/{{this.dataValues.driver_Id}}">Edit</a>|
+                <a style="color: red;" href="deletedriver/{{this.dataValues.driver_Id}}" onclick="return confirm('Are you sure to delete this? ')">Delete</a>
+            </td>
+        </tr>
+
+        {{/each}} 
+
+    </table>
+
+</div>

@@ -1,0 +1,43 @@
+ <div class="container">
+        <h1 class="text-center">{{heading}}</h1>
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <form method="post">
+                    
+                    <br>
+                    <div>
+                        <label for="id">Driver name</label>
+                        <input  style="border-radius: 12px;" type="name" name="driverName" class="form-control" placeholder="Driver name" value="{{driverDetails.dataValues.driverName}}" >
+                    </div>
+                    <div>
+                        <label for="last name" >License no.</label>
+                        <input style="border-radius: 12px;" type="name" name="driverLiceneceNo" class="form-control" placeholder="Licenseno" value="{{driverDetails.dataValues.driverLiceneceNo}}">
+                    </div>
+
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input  style="border-radius: 12px;" type="email" name="driverEmail" class="form-control" value="{{driverDetails.dataValues.driverEmail}}">
+                    </div>
+
+                    <div>
+                        <label for="adress">Address</label>
+                        <input  style="border-radius: 12px;" type="text" name="driverAddress" class="form-control" value="{{driverDetails.dataValues.driverAddress}}">
+                    </div>
+                    <div>
+                        <label for="dob">Dob</label>
+                        <input  style="border-radius: 12px; " type="date" name="driverDob" class="form-control" value="{{driverDetails.dataValues.driverDob}}">
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <input  style="border-radius: 12px;" type="text" name="driverGender" id="gender" class="form-control" value="{{driverDetails.dataValues.driverGender}}">
+                    </div>
+
+                    <div class="d-grid mt-4">
+                        <p class="alert-danger" id="error-messages"></p>
+                        <button type="submit" class="btn btn-success shadow" id="btn-login">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

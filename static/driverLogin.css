@@ -1,0 +1,40 @@
+.container{
+    margin-left: 500px;
+    margin-top: 120px;
+    height: 290px;
+    width: 315px;
+    background-color: black;
+    border-radius: 17px;
+    border-width: 2px;
+    border-color: yellow;
+}
+.heading h1{
+    margin-top: -20px;
+    color: rgb(24, 89, 41);
+}
+.text input{
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: chartreuse;
+    font-size: 25px;
+}
+.gap{
+    height: 10px;
+    width: 10px;
+}
+.gap2{
+    height: 10px;
+    width: 10px;
+}
+.signup_link{
+    margin-left: 100px;
+    margin-top: -30px;
+}
+.butt button{
+    border-radius: 13px;
+    font-size: 24px;
+    color: greenyellow;
+    background-color: black;
+    border-width: 2px;
+    border-color: yellow;
+}

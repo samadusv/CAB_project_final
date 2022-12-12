@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/static/passengerProfile.css" type="text/css">
+<br>
+<br>
+<div class="container">
+   <h2>Passenger Profile</h2>
+    <table class="table table-striped mt-4">
+        <tr>
+            <th style="color: red;">id</th>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>DOB</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>{{data.id}}</td>
+            <td>{{data.firstName}}</td>
+            <td>{{data.lastName}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.mobile}}</td>
+            <td>{{data.dob}}</td>
+
+            <td>
+                <a href="/update">Edit</a> |
+                <a href="/delete" class="text-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
+            </td>
+        </tr>
+    
+    </table>
+    <p   class="text-end">You are logged in as: 
+        <b style="color: green;">{{data.firstName}} {{data.lastName}}</b>
+    </p>
+    <div class="marginn">
+        <button style="border-radius: 10px;" onclick="window.location.href = '/cabs';"> Cabs </button>
+        
+    </div>
+   
+    
+    
+</div>

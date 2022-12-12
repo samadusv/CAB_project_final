@@ -1,0 +1,25 @@
+.container h2{
+    margin-left: 430px;
+    color: rgb(71, 108, 15);
+}
+.marginn button{
+    background-color: black;
+    color: greenyellow;
+    width: 100px;
+}
+.marginn{
+    margin-top: -190px;
+    margin-left: 1000px ;
+   
+}
+.marginnn{
+    margin-top: -35px;
+    margin-left: 40px ;
+    
+}
+.marginnn button{
+    background-color: black;
+    color: greenyellow;
+    width: 100px;
+    border-radius: 10px;
+}

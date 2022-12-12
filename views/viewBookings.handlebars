@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/static/viewBookings.css" type="text/css">
+<div class="vibe2">
+<div class="col-sm-6 offset-sm-3" style="margin-left: 80px;">
+    
+    <form method="post" >
+        
+    <div class="vibe"><label for="date"  >Enter required date:</label></div>
+    
+  <div class="vibe1"><input type="date" name="date" id="date" class="form-control"></div> 
+    <br>
+    <div class="vibe4"><button type="submit" class="btn btn-primary" onclick="changeFlag()">Search</button></div>
+    </form>
+
+</div>
+</div>
+<br>
+{{#if found}}
+    <div class="alert alert-danger" role="alert" >No bookings found!</div></div>
+{{/if}}
+
+<div class="vibe5"><h1 class="text-center" style="color: green;" >Booking Details</h1></div>
+<br>
+<div class="container">
+    <table class="table table-striped" >
+        <tr>
+            <th>Booking Id</th>
+            <th>Cab From</th>
+            <th>Date of booking</th>
+            <th>Cab To</th>
+            <th>Booking Time</th>
+            <th>Cab No</th>
+            <th>Cost</th>
+            <th>Passenger Id</th>
+            <th>Driver Id</th>
+            
+        </tr>
+        {{#each data}}
+
+        <tr>
+            <td>{{this.dataValues.bookingId}}</td>
+            <td>{{this.dataValues.dateOfBooking}}</td>
+            <td>{{this.dataValues.cabFrom}}</td>
+            <td>{{this.dataValues.cabTo}}</td>
+            <td>{{this.dataValues.bookingTime}}</td>
+            <td>{{this.dataValues.cabNo}}</td>
+            <td>{{this.dataValues.cost}}</td>
+            <td>{{this.dataValues.passengerId}}</td>
+            <td>{{this.dataValues.driverId}}</td>
+           
+          
+        </tr>
+       
+        {{/each}}
+
+    </table>
+    <br>
+    <div class="vibe3">
+    <a href="viewBookings">
+        <button class="btn btn-success">Booking Details</button>
+    </a>
+    </div>
+    
+</div>

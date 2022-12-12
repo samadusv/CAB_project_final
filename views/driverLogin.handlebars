@@ -1,0 +1,28 @@
+    <link rel="stylesheet" href="/static/driverLogin.css" type="text/css">
+    {{!-- <div class="first"><h1></h1></div> --}}
+    <div class="container">
+       <div class="heading"> <h1 >Driver Login</h1></div>
+        <br>
+        <form  id="form" method="post" name="form">
+            <div class="text">
+                <input id="uname" type="type" name="email" placeholder="enter email.." required>
+               
+            </div>
+            <div class="gap"></div>
+            <div class="text">
+                <input id="pass" type="password" name="password" placeholder="enter password.." required>
+                
+            </div>
+
+            {{!-- <div class="pass">Forgot Password ?</div> --}}
+            <div class="gap2 "></div>
+            <div class="butt"><button type="submit" > Login </button></div>
+            {{#if message}}
+            <p class="text-danger">{{message}}</p>
+            {{/if}}
+            <div class="signup_link">
+               <span style="color: white;"> Not a member ?</span> <a href="/driverRegister">SignUp</a>
+            </div>
+        </form>
+    </div>
+    

@@ -1,0 +1,40 @@
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="color: #2d9749;">Cab</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        {{#if data.role}}
+        <li class="nav-item">
+          <a href="/driverDetails" class="nav-link">Driver details</a>
+        </li>
+        <li class="nav-item">
+          <a href="viewBookings" class="nav-link">View Booking</a>
+        </li>
+
+        {{/if}}
+
+      </ul>
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+
+          <div class="dropdown-menu dropdown-menu-end">
+            <a href="/passenger" class="dropdown-item">Profile</a>
+
+          <div class="dropdown-divider"></div>
+            <a href="/logout" class="dropdown-item">Logout</a>
+
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</body>
